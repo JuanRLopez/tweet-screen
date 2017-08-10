@@ -1,13 +1,14 @@
-from django.shortcuts import render
+import os
 
+from django.shortcuts import render
 from twitter import Twitter, OAuth
 from HTMLParser import HTMLParser
 
 # Variables that contain the user credentials to access Twitter API
-ACCESS_TOKEN = '160055720-0WR63cF8OvhAbkjEePf3ZT83hI1MkL7FCVrvFHxR'
-ACCESS_SECRET = 'BrPJQxMFjfwL6DSZwOe3sGV3sikPjsZ7s4slQQTkYzVb7'
-CONSUMER_KEY = 'E8McWg4korwxzw5g7SelDtN1D'
-CONSUMER_SECRET = 'pZawz4825aDZ3ZFInlpwIO6Bpc8ZMmNhT9a7BQgK4QUEFTggMS'
+ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
+ACCESS_SECRET = os.environ['ACCESS_SECRET']
+CONSUMER_KEY = os.environ['CONSUMER_KEY']
+CONSUMER_SECRET = os.environ['CONSUMER_SECRET']
 
 oauth = OAuth(ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRET)
 
