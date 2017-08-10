@@ -29,7 +29,7 @@ SECRET_KEY = '$1+9)zsuv&x+map%jk#0a4*#)%hr5%u0mk6lvy9^)imv=tk#=w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['quiet-bastion-95250.herokuapp.com', ]
 
 
 # Application definition
